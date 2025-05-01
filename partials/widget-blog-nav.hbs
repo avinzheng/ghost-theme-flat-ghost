@@ -1,0 +1,18 @@
+{{!-- Blog Navigation Widget --}}
+
+<div class="widget widget-blog-nav">
+  <div class="wrap">
+    {{#if @site.logo}}
+      <a class="logo" href="{{@site.url}}" title="{{@site.description}}">
+        <img src="{{@site.logo}}" alt="{{@site.title}}">
+      </a>
+    {{else}}
+      <a class="title" href="{{@site.url}}" title="{{@site.description}}">
+        <em>{{@site.title}}</em>
+        <small>{{@site.description}}</small>
+      </a>
+    {{/if}}
+  </div>
+
+  {{navigation}}
+</div>

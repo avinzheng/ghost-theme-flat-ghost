@@ -1,0 +1,64 @@
+{
+  "name": "flat-ghost",
+  "version": "5.0.1",
+  "description": "Just a flat style theme for Ghost.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20 <21 || >=22 <23",
+    "ghost": ">=5.0.0"
+  },
+  "scripts": {
+    "gscan": "gscan ./",
+    "zip": "bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs LICENSE package.json README.md"
+  },
+  "devDependencies": {
+    "bestzip": "^2.2.1",
+    "gscan": "^4.48.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "demo": "https://github.com/avinzheng/ghost-theme-flatghost",
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avinzheng/ghost-theme-flatghost.git"
+  },
+  "author": {
+    "name": "Avin Zheng",
+    "email": "me@avinz.net",
+    "url": "https://avinzheng.com"
+  },
+  "contributors": [
+    "https://github.com/avinzheng/ghost-theme-flatghost/graphs/contributors"
+  ],
+  "bugs": "https://github.com/avinzheng/ghost-theme-flatghost/issues",
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "flat",
+    "ghost-theme"
+  ],
+  "config": {
+    "posts_per_page": 10,
+    "image_sizes": {
+      "s": {
+        "width": 750
+      },
+      "m": {
+        "width": 1080
+      },
+      "l": {
+        "width": 1920
+      }
+    }
+  }
+}

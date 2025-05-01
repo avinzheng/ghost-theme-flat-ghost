@@ -1,0 +1,15 @@
+{{!-- Widget: Tags Cloud --}}
+
+<div class="widget widget-tags-cloud">
+  <div class="widget-title">Tags</div>
+  <div class="tags">
+    {{#get "tags" limit="20" include="count.posts" order="count.posts desc"}}
+      {{#foreach tags}}
+        <a class="tag" href="/tag/{{slug}}/">
+          {{name}}
+          <span>({{count.posts}})</span>
+        </a>
+      {{/foreach}}
+    {{/get}}
+  </div>
+</div>

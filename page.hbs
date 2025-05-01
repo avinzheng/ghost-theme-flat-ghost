@@ -1,0 +1,64 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the static page --}}
+{{#post}}
+  <div id="page-page">
+    <article id="post-content" class="{{post_class}} main-card">
+      {{#match @page.show_title_and_feature_image}}
+        <header class="post-header">
+          {{#if feature_image}}
+            <figure>
+              <img
+                src="{{img_url feature_image}}"
+                srcset="{{img_url feature_image size='s'}} 750w,
+                         {{img_url feature_image size='m'}} 1080w,
+                         {{img_url feature_image size='l'}} 1920w"
+                alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+              >
+              {{#if feature_image_caption}}
+                <figcaption>{{feature_image_caption}}</figcaption>
+              {{/if}}
+            </figure>
+          {{/if}}
+
+          <div class="post-title">
+            {{#if featured}}
+              <span class="featured-icon">★</span>
+            {{/if}}
+            <h1>{{title}}</h1>
+          </div>
+
+          <ul class="post-meta">
+            <li>
+              <span class="icon-post icon-post-date"></span>
+              <span>{{date published_at format="YYYY-MM-DD"}}</span>
+            </li>
+
+            <li>
+              <span class="icon-post icon-post-authors"></span>
+              {{authors separator='<i>,&nbsp;</i>' limit='3'}}
+            </li>
+
+            {{#if tags}}
+              <li class="tags">
+                <span class="icon-post icon-post-tags"></span>
+                {{tags separator='<i>,&nbsp;</i>' limit='5'}}
+              </li>
+            {{/if}}
+          </ul>
+        </header>
+      {{/match}}
+
+      {{!-- Class name "line-numbers" is used for Prism plugin "Line Numbers" --}}
+      <section id="content" class="markdown line-numbers">
+        {{content}}
+      </section>
+    </article>
+  </div>
+{{/post}}
+
+{{#contentFor 'prism-scripts'}}
+  <script src="{{asset 'libraries/prism/clipboard.min.js'}}"></script>
+  <script src="{{asset 'libraries/prism/prism.js'}}"></script>
+{{/contentFor}}

@@ -1,0 +1,26 @@
+{{!-- Mobile Header: Only show on mobile (screen width < 1024px) --}}
+
+<div id="mobile-nav">
+  <div id="mobile-nav-mask"></div>
+
+  <div id="mobile-nav-inner" class="clearfix">
+    <div class="fl scroll-box">
+      <div class="wrap">
+        <a class="logo" href="{{@site.url}}" title="{{@site.description}}">
+          {{#if @site.logo}}
+            <img src="{{@site.logo}}" alt="{{@site.title}}">
+          {{else}}
+            <div class="title">{{@site.title}}</div>
+            {{#if @site.description}}
+              <div class="des">{{@site.description}}</div>
+            {{/if}}
+          {{/if}}
+        </a>
+
+        {{navigation}}
+
+        {{> 'widget-blog-follow'}}
+      </div>
+    </div>
+  </div>
+</div>

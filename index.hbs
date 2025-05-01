@@ -1,0 +1,10 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+<div id="page-index">
+  {{!-- The tag below includes the markup for each post - partials/posts-list.hbs --}}
+  {{> 'posts-list'}}
+
+  {{!-- Previous/next page links - partials/pagination.hbs --}}
+  {{pagination}}
+</div>

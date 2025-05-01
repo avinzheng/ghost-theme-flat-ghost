@@ -1,0 +1,13 @@
+{{!-- Pagination --}}
+
+<div id="pagination" class="clearfix">
+  {{#if prev}}
+    <a class="prev" href="{{page_url prev}}">Newer</a>
+  {{/if}}
+
+  <span class="pages">{{page}} / {{pages}}</span>
+
+  {{#if next}}
+    <a class="next" href="{{page_url next}}">Older</a>
+  {{/if}}
+</div>

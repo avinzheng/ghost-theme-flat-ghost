@@ -1,0 +1,48 @@
+/** ----------------------------------------------------------------------------
+ * @desc      CSS Variables
+ * @author    Avin Zheng
+ * @copyright MIT License
+ ** --------------------------------------------------------------------------*/
+:root {
+  .theme-turquoise {
+    --dark-color: #16A085;
+    --standard-color: #1ABC9C;
+    --light-color: #48C9B0;
+  }
+
+  .theme-blue {
+    --dark-color: #2980B9;
+    --standard-color: #3498DB;
+    --light-color: #5DADE2;
+  }
+
+  .theme-green {
+    --dark-color: #27AE60;
+    --standard-color: #2ECC71;
+    --light-color: #58D68D;
+  }
+
+  .theme-red {
+    --dark-color: #C0392B;
+    --standard-color: #E74C3C;
+    --light-color: #EC7063;
+  }
+
+  .theme-orange {
+    --dark-color: #D35400;
+    --standard-color: #E67E22;
+    --light-color: #F69036;
+  }
+
+  .theme-yellow {
+    --dark-color: #F39C12;
+    --standard-color: #F1C40F;
+    --light-color: #F4D313;
+  }
+
+  .theme-purple {
+    --dark-color: #8E44AD;
+    --standard-color: #9B59B6;
+    --light-color: #B574D0;
+  }
+}

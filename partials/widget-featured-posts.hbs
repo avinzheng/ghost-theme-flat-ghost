@@ -1,0 +1,17 @@
+{{!-- Widget: Featured Posts --}}
+
+<div class="widget widget-featured-posts">
+  <div class="widget-title">Featured</div>
+
+  <ul class="items">
+    {{#get "posts" filter="featured:true" as |featured|}}
+      {{#foreach featured}}
+        <li class="item">
+          <a href="{{url}}">{{title}}</a>
+        </li>
+      {{/foreach}}
+    {{else}}
+      <li>No Posts</li>
+    {{/get}}
+  </ul>
+</div>
