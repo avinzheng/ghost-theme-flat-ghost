@@ -4,21 +4,27 @@
   <div class="widget-title">Follow</div>
 
   <ul class="social">
-<!--    <li>-->
-<!--      <a href="https://github.com/avincheng"-->
-<!--         title="GitHub"-->
-<!--         target="_blank"-->
-<!--         rel="noopener">-->
-<!--        <i class="icon-social icon-social-github"></i>-->
-<!--      </a>-->
-<!--    </li>-->
+    {{#if @custom.GitHub_url}}
+      <li>
+        <a
+          href="{{@custom.GitHub_url}}"
+          title="GitHub"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="icon-social icon-social-github"></i>
+        </a>
+      </li>
+    {{/if}}
 
     {{#if @site.facebook}}
       <li>
-        <a href="{{facebook_url}}"
-           title="FaceBook"
-           target="_blank"
-           rel="noopener">
+        <a
+          href="{{facebook_url}}"
+          title="FaceBook"
+          target="_blank"
+          rel="noopener"
+        >
           <i class="icon-social icon-social-facebook"></i>
         </a>
       </li>
@@ -26,58 +32,80 @@
 
     {{#if @site.twitter}}
       <li>
-        <a href="{{twitter_url}}"
-           title="Twitter"
-           target="_blank"
-           rel="noopener">
+        <a
+          href="{{twitter_url}}"
+          title="Twitter"
+          target="_blank"
+          rel="noopener"
+        >
           <i class="icon-social icon-social-twitter"></i>
         </a>
       </li>
     {{/if}}
 
-<!--    <li>-->
-<!--      <a href=""-->
-<!--         title="LinkedIn"-->
-<!--         target="_blank"-->
-<!--         rel="noopener">-->
-<!--        <i class="icon-social icon-social-linkedin"></i>-->
-<!--      </a>-->
-<!--    </li>-->
+    {{#if @custom.LinkedIn_url}}
+      <li>
+        <a
+          href="{{@custom.LinkedIn_url}}"
+          title="LinkedIn"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="icon-social icon-social-linkedin"></i>
+        </a>
+      </li>
+    {{/if}}
 
-<!--    <li>-->
-<!--      <a href=""-->
-<!--         title="ZhiHu"-->
-<!--         target="_blank"-->
-<!--         rel="noopener">-->
-<!--        <i class="icon-social icon-social-zhihu"></i>-->
-<!--      </a>-->
-<!--    </li>-->
+    {{#if @custom.ZhiHu_url}}
+      <li>
+        <a
+          href="{{@custom.ZhiHu_url}}"
+          title="ZhiHu"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="icon-social icon-social-zhihu"></i>
+        </a>
+      </li>
+    {{/if}}
 
-<!--    <li>-->
-<!--      <a href=""-->
-<!--         title="WeiBo"-->
-<!--         target="_blank"-->
-<!--         rel="noopener">-->
-<!--        <i class="icon-social icon-social-weibo"></i>-->
-<!--      </a>-->
-<!--    </li>-->
+    {{#if @custom.WeiBo_url}}
+      <li>
+        <a
+          href="{{@custom.WeiBo_url}}"
+          title="WeiBo"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="icon-social icon-social-weibo"></i>
+        </a>
+      </li>
+    {{/if}}
 
-<!--    <li>-->
-<!--      <a href=""-->
-<!--         title="WeChat"-->
-<!--         target="_blank"-->
-<!--         rel="noopener">-->
-<!--        <i class="icon-social icon-social-wechat"></i>-->
-<!--      </a>-->
-<!--    </li>-->
+    {{#if @custom.WeChat_url}}
+      <li>
+        <a
+          href="{{@custom.WeChat_url}}"
+          title="WeChat"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="icon-social icon-social-wechat"></i>
+        </a>
+      </li>
+    {{/if}}
 
-<!--    <li>-->
-<!--      <a href=""-->
-<!--         title="QQ"-->
-<!--         target="_blank"-->
-<!--         rel="noopener">-->
-<!--        <i class="icon-social icon-social-qq"></i>-->
-<!--      </a>-->
-<!--    </li>-->
+    {{#if @custom.QQ_url}}
+      <li>
+        <a
+          href="{{@custom.QQ_url}}"
+          title="QQ"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="icon-social icon-social-qq"></i>
+        </a>
+      </li>
+    {{/if}}
   </ul>
 </div>

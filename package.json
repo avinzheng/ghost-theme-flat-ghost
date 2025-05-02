@@ -48,7 +48,46 @@
     "ghost-theme"
   ],
   "config": {
-    "posts_per_page":5,
+    "custom": {
+      "theme_color_schema": {
+        "type": "select",
+        "options": ["turquoise", "blue", "green", "red", "orange", "yellow", "purple"],
+        "default": "turquoise",
+        "group": "site_wide",
+        "description": "Select your theme color schema."
+      },
+      "GitHub_url": {
+        "type": "text",
+        "group": "site_wide",
+        "description": "URL of your GitHub profile."
+      },
+      "LinkedIn_url": {
+        "type": "text",
+        "group": "site_wide",
+        "description": "URL of your LinkedIn profile."
+      },
+      "ZhiHu_url": {
+        "type": "text",
+        "group": "site_wide",
+        "description": "URL of your ZhiHu profile."
+      },
+      "WeiBo_url": {
+        "type": "text",
+        "group": "site_wide",
+        "description": "URL of your WeiBo profile."
+      },
+      "WeChat_url": {
+        "type": "text",
+        "group": "site_wide",
+        "description": "URL to chat with you on WeChat."
+      },
+      "QQ_url": {
+        "type": "text",
+        "group": "site_wide",
+        "description": "URL to chat with you on QQ."
+      }
+    },
+    "posts_per_page":10,
     "image_sizes": {
       "s": {
         "width": 750
