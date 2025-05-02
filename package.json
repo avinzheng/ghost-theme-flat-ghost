@@ -1,6 +1,6 @@
 {
   "name": "flat-ghost",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "description": "Just a flat style theme for Ghost.",
   "license": "MIT",
   "engines": {
@@ -9,10 +9,13 @@
   },
   "scripts": {
     "gscan": "gscan ./",
-    "zip": "bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs LICENSE package.json README.md README_zh-CN.md"
+    "zip": "bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs LICENSE package.json README.md README_zh-CN.md",
+    "release": "commit-and-tag-version"
   },
   "devDependencies": {
     "bestzip": "^2.2.1",
+    "commit-and-tag-version": "^12.5.1",
+    "conventional-changelog-angular": "^8.0.0",
     "gscan": "^4.48.0"
   },
   "browserslist": [
@@ -51,7 +54,15 @@
     "custom": {
       "theme_color_schema": {
         "type": "select",
-        "options": ["turquoise", "blue", "green", "red", "orange", "yellow", "purple"],
+        "options": [
+          "turquoise",
+          "blue",
+          "green",
+          "red",
+          "orange",
+          "yellow",
+          "purple"
+        ],
         "default": "turquoise",
         "group": "site_wide",
         "description": "Select your theme color schema."
@@ -87,7 +98,7 @@
         "description": "URL to chat with you on QQ."
       }
     },
-    "posts_per_page":10,
+    "posts_per_page": 10,
     "image_sizes": {
       "s": {
         "width": 750
