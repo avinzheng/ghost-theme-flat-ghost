@@ -14,9 +14,6 @@ importers:
       commit-and-tag-version:
         specifier: ^12.5.1
         version: 12.5.1
-      conventional-changelog-angular:
-        specifier: ^8.0.0
-        version: 8.0.0
       gscan:
         specifier: ^4.48.0
         version: 4.48.0
@@ -979,10 +976,6 @@ packages:
   conventional-changelog-angular@6.0.0:
     resolution: {integrity: sha512-6qLgrBF4gueoC7AFVHu51nHL9pF9FRjXrH+ceVf7WmAfH3gs+gEYOkvxhjMPjZu57I4AGUGoNTY8V7Hrgf1uqg==}
     engines: {node: '>=14'}
-
-  conventional-changelog-angular@8.0.0:
-    resolution: {integrity: sha512-CLf+zr6St0wIxos4bmaKHRXWAcsCXrJU6F4VdNDrGRK3B8LDLKoX3zuMV5GhtbGkVR/LohZ6MT6im43vZLSjmA==}
-    engines: {node: '>=18'}
 
   conventional-changelog-atom@3.0.0:
     resolution: {integrity: sha512-pnN5bWpH+iTUWU3FaYdw5lJmfWeqSyrUkG+wyHBI9tC1dLNnHkbAOg1SzTQ7zBqiFrfo55h40VsGXWMdopwc5g==}
@@ -3656,10 +3649,6 @@ snapshots:
   content-type@1.0.5: {}
 
   conventional-changelog-angular@6.0.0:
-    dependencies:
-      compare-func: 2.0.0
-
-  conventional-changelog-angular@8.0.0:
     dependencies:
       compare-func: 2.0.0
 

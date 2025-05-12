@@ -9,13 +9,14 @@
   },
   "scripts": {
     "gscan": "gscan ./",
-    "zip": "bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs LICENSE package.json README.md README_zh-CN.md",
-    "release": "commit-and-tag-version"
+    "zip": "bestzip $npm_package_name.zip assets/* partials/* *.hbs LICENSE package.json README.md README_zh-CN.md",
+    "release:patch": "commit-and-tag-version --release-as patch",
+    "release:minor": "commit-and-tag-version --release-as minor",
+    "release:major": "commit-and-tag-version --release-as major"
   },
   "devDependencies": {
     "bestzip": "^2.2.1",
     "commit-and-tag-version": "^12.5.1",
-    "conventional-changelog-angular": "^8.0.0",
     "gscan": "^4.48.0"
   },
   "browserslist": [
@@ -67,32 +68,32 @@
         "group": "site_wide",
         "description": "Select your theme color schema."
       },
-      "GitHub_url": {
+      "github_url": {
         "type": "text",
         "group": "site_wide",
         "description": "URL of your GitHub profile."
       },
-      "LinkedIn_url": {
+      "linkedin_url": {
         "type": "text",
         "group": "site_wide",
         "description": "URL of your LinkedIn profile."
       },
-      "ZhiHu_url": {
+      "zhihu_url": {
         "type": "text",
         "group": "site_wide",
         "description": "URL of your ZhiHu profile."
       },
-      "WeiBo_url": {
+      "weibo_url": {
         "type": "text",
         "group": "site_wide",
         "description": "URL of your WeiBo profile."
       },
-      "WeChat_url": {
+      "wechat_url": {
         "type": "text",
         "group": "site_wide",
         "description": "URL to chat with you on WeChat."
       },
-      "QQ_url": {
+      "qq_url": {
         "type": "text",
         "group": "site_wide",
         "description": "URL to chat with you on QQ."
