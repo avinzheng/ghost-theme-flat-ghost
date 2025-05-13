@@ -9,7 +9,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
   <meta charset="utf-8">
 
   {{!-- Base Meta --}}
-  <title>ERROR: {{statusCode}}</title>
+  <title>{{t "ERROR"}}: {{statusCode}}</title>
   <meta name="robots" content="none">
   <meta name="HandheldFriendly" content="True">
   <meta
@@ -42,9 +42,9 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 </head>
 <body>
   <main>
-    <h1 class="error-code">ERROR: {{statusCode}}</h1>
+    <h1 class="error-code">{{t "ERROR"}}: {{statusCode}}</h1>
     <p class="error-des">{{message}}</p>
-    <a class="error-link" href="{{@site.url}}">Go to the front page →</a>
+    <a class="error-link" href="{{@site.url}}">{{t "Go to the front page"}} →</a>
   </main>
 </body>
 </html>

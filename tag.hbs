@@ -5,12 +5,14 @@
   {{#tag}}
     <header id="tag" class="clearfix main-card">
       <div class="fl info">
-        <h1>TAG: {{name}}</h1>
+        <h1>{{t "TAG"}}: {{name}}</h1>
 
         <div class="total">
           <small>
-            {{plural ../pagination.total empty='No Posts' singular='% Post'
-                     plural='% Posts'}}
+            {{plural ../pagination.total
+                     empty=(t "No Posts")
+                     singular=(t "% Post")
+                     plural=(t "% Posts")}}
           </small>
         </div>
 

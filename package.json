@@ -9,7 +9,7 @@
   },
   "scripts": {
     "gscan": "gscan ./",
-    "zip": "bestzip $npm_package_name.zip assets/* partials/* *.hbs LICENSE package.json README.md README_zh-CN.md",
+    "zip": "bestzip $npm_package_name.zip locales/* assets/* partials/* *.hbs LICENSE package.json README.md README_zh-CN.md",
     "release:patch": "commit-and-tag-version --release-as patch",
     "release:minor": "commit-and-tag-version --release-as minor",
     "release:major": "commit-and-tag-version --release-as major"

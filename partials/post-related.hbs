@@ -1,11 +1,12 @@
 {{!-- Related Posts --}}
 
 {{#if primary_tag}}
-  {{#get 'posts' filter='tags:{{primary_tag.slug}}+comment_id:-{{comment_id}}' limit='5' as |related_posts|}}
+  {{#get 'posts' filter='tags:{{primary_tag.slug}}+comment_id:-{{comment_id}}'
+         limit='5' as |related_posts|}}
     {{#if related_posts}}
       <aside id="post-related" class="main-card">
         <header class="card-header">
-          <div class="card-title">Related Posts</div>
+          <div class="card-title">{{t "Related Posts"}}</div>
         </header>
 
         <ul>

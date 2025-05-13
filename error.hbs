@@ -10,7 +10,7 @@ You'll notice that we *don't* use any JavaScript, or ghost_head / ghost_foot in 
   <meta charset="utf-8">
 
   {{!-- Base Meta --}}
-  <title>ERROR: {{statusCode}}</title>
+  <title>{{t "ERROR"}}: {{statusCode}}</title>
   <meta name="robots" content="none">
   <meta name="HandheldFriendly" content="True">
   <meta
@@ -43,20 +43,20 @@ You'll notice that we *don't* use any JavaScript, or ghost_head / ghost_foot in 
 </head>
 <body>
   <main>
-    <h1 class="error-code">ERROR: {{statusCode}}</h1>
+    <h1 class="error-code">{{t "ERROR"}}: {{statusCode}}</h1>
     <p class="error-des">{{message}}</p>
-    <a class="error-link" href="{{@site.url}}">Go to the front page →</a>
+    <a class="error-link" href="{{@site.url}}">{{t "Go to the front page"}} →</a>
 
     {{#if errorDetails}}
       <section class="error-stack">
-        <h3>Theme errors</h3>
+        <h3>{{t "Theme errors"}}</h3>
         <ul class="error-stack-list">
           {{#foreach errorDetails}}
             <li>
               <em class="error-stack-function">{{{rule}}}</em>
               {{#foreach failures}}
-                <p><span class="error-stack-file">Ref: {{ref}}</span></p>
-                <p><span class="error-stack-file">Message: {{message}}</span>
+                <p><span class="error-stack-file">{{t "Ref"}}: {{ref}}</span></p>
+                <p><span class="error-stack-file">{{t "Message"}}: {{message}}</span>
                 </p>
               {{/foreach}}
             </li>

@@ -1,7 +1,7 @@
 {{!-- Widget: Featured Posts --}}
 
 <div class="widget widget-featured-posts">
-  <div class="widget-title">Featured</div>
+  <div class="widget-title">{{t "Featured"}}</div>
 
   <ul class="items">
     {{#get "posts" filter="featured:true" as |featured|}}
@@ -11,7 +11,7 @@
         </li>
       {{/foreach}}
     {{else}}
-      <li>No Posts</li>
+      <li>{{t "No Posts!"}}</li>
     {{/get}}
   </ul>
 </div>

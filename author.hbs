@@ -13,8 +13,10 @@
           {{/if}}
 
           <small>
-            {{plural ../pagination.total empty='No Posts' singular='% Post'
-                     plural='% Posts'}}
+            {{plural ../pagination.total
+                     empty=(t "No Posts")
+                     singular=(t "% Post")
+                     plural=(t "% Posts")}}
           </small>
         </div>
 
@@ -22,14 +24,18 @@
           {{#if website}}
             <li>
               <a href="{{website}}" target="_blank" rel="noopener">
-                <small>Website</small>
+                <small>{{t "Website"}}</small>
               </a>
             </li>
           {{/if}}
 
           {{#if facebook}}
             <li>
-              <a href="{{facebook_url}}" target="_blank" rel="noopener">
+              <a
+                href="{{social_url type="facebook"}}"
+                target="_blank"
+                rel="noopener"
+              >
                 <small>Facebook</small>
               </a>
             </li>
@@ -37,8 +43,97 @@
 
           {{#if twitter}}
             <li>
-              <a href="{{twitter_url}}" target="_blank" rel="noopener">
+              <a
+                href="{{social_url type="twitter"}}"
+                target="_blank"
+                rel="noopener"
+              >
                 <small>Twitter</small>
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if linkedin}}
+            <li>
+              <a
+                href="{{social_url type="linkedin"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <small>LinkedIn</small>
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if bluesky}}
+            <li>
+              <a
+                href="{{social_url type="bluesky"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <small>BlueSky</small>
+              </a>
+            </li>
+          {{/if}}
+
+
+          {{#if threads}}
+            <li>
+              <a
+                href="{{social_url type="threads"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <small>Threads</small>
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if mastodon}}
+            <li>
+              <a
+                href="{{social_url type="mastodon"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <small>Mastodon</small>
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if tiktok}}
+            <li>
+              <a
+                href="{{social_url type="tiktok"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <small>TikTok</small>
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if youtube}}
+            <li>
+              <a
+                href="{{social_url type="youtube"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <small>YouTube</small>
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if instagram}}
+            <li>
+              <a
+                href="{{social_url type="instagram"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <small>Instagram</small>
               </a>
             </li>
           {{/if}}
