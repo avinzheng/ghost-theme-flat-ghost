@@ -37,9 +37,9 @@
 }
 
 .widget-blog-nav > .wrap > a.logo,
-.widget-blog-nav a.logo > img,
-.widget-blog-nav > .wrap > a.title {
+.widget-blog-nav a.logo > img {
   display: block;
+  width: 100%;
 }
 
 .widget-blog-nav > .wrap > a.logo:hover {
@@ -47,6 +47,7 @@
 }
 
 .widget-blog-nav > .wrap > a.title {
+  display: block;
   padding: 35px 20px 25px;
   background: #2C3E50;
   color: #FFFFFF;
