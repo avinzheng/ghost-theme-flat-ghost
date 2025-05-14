@@ -3,7 +3,11 @@
 
 <div id="page-author">
   {{#author}}
-    <header id="author" class="clearfix main-card">
+    <header
+      id="author"
+      class="clearfix main-card {{#if cover_image}}text-white{{/if}}"
+      {{#if cover_image}}style="background-image: url({{cover_image}})"{{/if}}
+    >
       <div class="fl info">
         <h1>{{name}}</h1>
 
@@ -20,11 +24,16 @@
           </small>
         </div>
 
-        <ul class="clearfix links">
+        <ul class="links">
           {{#if website}}
             <li>
-              <a href="{{website}}" target="_blank" rel="noopener">
-                <small>{{t "Website"}}</small>
+              <a
+                href="{{website}}"
+                title="{{t "Website"}}"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="icon-social social-website"></i>
               </a>
             </li>
           {{/if}}
@@ -33,10 +42,11 @@
             <li>
               <a
                 href="{{social_url type="facebook"}}"
+                title="Facebook"
                 target="_blank"
                 rel="noopener"
               >
-                <small>Facebook</small>
+                <i class="icon-social social-facebook"></i>
               </a>
             </li>
           {{/if}}
@@ -45,10 +55,11 @@
             <li>
               <a
                 href="{{social_url type="twitter"}}"
+                title="X"
                 target="_blank"
                 rel="noopener"
               >
-                <small>Twitter</small>
+                <i class="icon-social social-x"></i>
               </a>
             </li>
           {{/if}}
@@ -57,10 +68,11 @@
             <li>
               <a
                 href="{{social_url type="linkedin"}}"
+                title="LinkedIn"
                 target="_blank"
                 rel="noopener"
               >
-                <small>LinkedIn</small>
+                <i class="icon-social social-linkedin"></i>
               </a>
             </li>
           {{/if}}
@@ -69,10 +81,11 @@
             <li>
               <a
                 href="{{social_url type="bluesky"}}"
+                title="BlueSky"
                 target="_blank"
                 rel="noopener"
               >
-                <small>BlueSky</small>
+                <i class="icon-social social-bluesky"></i>
               </a>
             </li>
           {{/if}}
@@ -82,10 +95,11 @@
             <li>
               <a
                 href="{{social_url type="threads"}}"
+                title="Threads"
                 target="_blank"
                 rel="noopener"
               >
-                <small>Threads</small>
+                <i class="icon-social social-threads"></i>
               </a>
             </li>
           {{/if}}
@@ -94,10 +108,11 @@
             <li>
               <a
                 href="{{social_url type="mastodon"}}"
+                title="Mastodon"
                 target="_blank"
                 rel="noopener"
               >
-                <small>Mastodon</small>
+                <i class="icon-social social-mastodon"></i>
               </a>
             </li>
           {{/if}}
@@ -106,10 +121,11 @@
             <li>
               <a
                 href="{{social_url type="tiktok"}}"
+                title="TikTok"
                 target="_blank"
                 rel="noopener"
               >
-                <small>TikTok</small>
+                <i class="icon-social social-tiktok"></i>
               </a>
             </li>
           {{/if}}
@@ -118,10 +134,11 @@
             <li>
               <a
                 href="{{social_url type="youtube"}}"
+                title="YouTube"
                 target="_blank"
                 rel="noopener"
               >
-                <small>YouTube</small>
+                <i class="icon-social social-youtube"></i>
               </a>
             </li>
           {{/if}}
@@ -130,10 +147,11 @@
             <li>
               <a
                 href="{{social_url type="instagram"}}"
+                title="Instagram"
                 target="_blank"
                 rel="noopener"
               >
-                <small>Instagram</small>
+                <i class="icon-social social-instagram"></i>
               </a>
             </li>
           {{/if}}
