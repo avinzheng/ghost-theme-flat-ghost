@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [5.3.0](https://github.com/avinzheng/ghost-theme-flat-ghost/compare/v5.2.0...v5.3.0) (2025-05-14)
+
+
+### Features
+
+* **icons:** update social link icons ([de3d951](https://github.com/avinzheng/ghost-theme-flat-ghost/commit/de3d951a333e9c98803a63dbb87bccaaa2513bcc))
+
+
+### Bug Fixes
+
+* **logo:** fix publication logo style issue ([fc8c3dd](https://github.com/avinzheng/ghost-theme-flat-ghost/commit/fc8c3dd035cd246d11d5a74d47874f1101949ef4))
+
 ## [5.2.0](https://github.com/avinzheng/ghost-theme-flat-ghost/compare/v5.1.1...v5.2.0) (2025-05-13)
 
 
